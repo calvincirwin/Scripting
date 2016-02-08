@@ -10,19 +10,27 @@ public class VariablesandFunctions : MonoBehaviour {
 	double deci = 1.5;
 
 	void Start () {
-		Debug.Log (message);
-		Debug.Log (deci);
-		Debug.Log("1 Times 2 Equals "+mult (1, 2));
-		Debug.Log ("5 Times 6 Equals "+mult (5, 6));
-		Debug.Log ("7 Times 5 Equals "+mult (7, 5));
-		Debug.Log(x);
+		print (message);
+
+		print (deci);
+
+		print ("1 Times 2 Equals "+mult (1, 2));
+
+		print ("5 Times 6 Equals "+mult (5, 6));
+
+		print ("7 Times 5 Equals "+mult (7, 5));
+
+		print (x);
 		x = mult(x,y);
-		Debug.Log (x);
+
+		print (x);
 		x = 3;
 		x = mult(x,y);
-		Debug.Log (x);
+
+		print (x);
 		x = mult(x,4);
-		Debug.Log (x);
+
+		print (x);
 	}
 	
 	int mult(int num1, int num2){
