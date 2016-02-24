@@ -7,9 +7,9 @@ public class ConventionsandSyntax : MonoBehaviour
 	{
 		//This is a single line comment.
 			
-			/*  This is a multiple line comment or block 
-			 *	of code that needs to be commented out .
-			 */
+		/*  This is a multiple line comment or block 
+		of code that needs to be commented out .*/
+
 				
 	}
 	
