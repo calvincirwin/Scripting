@@ -13,7 +13,7 @@ public class IfStatements : MonoBehaviour
 		if(Input.GetKeyDown(KeyCode.Space))
 			TemperatureTest();
 		
-		cokeTemp -= Time.deltaTime * 5f;
+		cokeTemp -= Time.deltaTime * 10f;
 	}
 	
 	
