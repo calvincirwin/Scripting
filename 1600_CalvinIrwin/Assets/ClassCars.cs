@@ -8,7 +8,7 @@ public class ClassCars : MonoBehaviour {
 
 		Car[] cars = new Car[6];
 
-		Car sonata = new Car (CarMake., "Sonata", 2010, "Red");
+		Car sonata = new Car (CarMake.Hyundai, "Sonata", 2010, "Red");
 		Car civic = new Car (CarMake.Honda, "Civic", 2004, "Gold");
 		Car malibu = new Car (CarMake.Chevy, "Malibu", 2008, "Silver");
 		Car focus = new Car (CarMake.Ford, "Focus", 2011, "White");
