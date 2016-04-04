@@ -7,19 +7,34 @@ public class BalloonMovement : MonoBehaviour
 	// Use this for initialization
 	public Rigidbody balloonPrefab;
 	public Transform balloonSpawn;
+	public int balloonNumber;
 	void Start () 
 	{
 		
 	}
-	
-	// Update is called once per frame
-	void Update () 
+
+	void OnTriggerEnter (Collider Spawn)
 	{
-		if(Input.GetKeyDown(KeyCode.Space))
-		{
+		if (Spawn.transform.tag == "balloonTrigger") {
+			Debug.Log ("balloonTrigger");
 			Rigidbody balloonInstance;
 			balloonInstance = Instantiate(balloonPrefab, balloonSpawn.position, balloonSpawn.rotation) as Rigidbody;
 			balloonInstance.AddForce(balloonSpawn.up * 200);
 		}
 	}
+	void Update () 
+	{
+		if(Input.GetKeyDown(KeyCode.Space))
+		{
+			int launchNum = Random.Range (1, 5);
+			if (launchNum == balloonNumber) {
+				Rigidbody balloonInstance;
+				balloonInstance = Instantiate (balloonPrefab, balloonSpawn.position, balloonSpawn.rotation) as Rigidbody;
+				balloonInstance.AddForce (balloonSpawn.up * (200 + 20*(balloonNumber-1)));
+			}
+		}
+	}
+
+
+
 }
