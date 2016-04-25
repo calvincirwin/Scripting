@@ -8,6 +8,7 @@ public class Score : MonoBehaviour {
 	public int scoreValue;
 	public AudioSource sound;
 
+
 	// Use this for initialization
 	void Start () {
 		scoreValue = 0;
@@ -20,5 +21,7 @@ public class Score : MonoBehaviour {
 	}
 	void UpdateScore (){
 		score.text = "Score\n" + scoreValue;
-	}
+		}
+		
+
 }
